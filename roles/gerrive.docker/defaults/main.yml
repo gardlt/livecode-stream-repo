@@ -1,0 +1,21 @@
+---
+docker_keyserver: "hkp://p80.pool.sks-keyservers.net:80"
+docker_options: ""
+
+docker_user: "vagrant"
+
+### PACKAGES ####
+docker_packages:
+  - apt-transport-https
+  - ca-certificates
+  - python-pip
+  - curl
+  - linux-image-extra-virtual
+
+docker_remove_packages:
+  - lxc-docker
+  - docker
+
+### PROXY ####
+docker_proxy: false
+docker_proxy_http: http://proxy.example.com:8080

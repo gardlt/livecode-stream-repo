@@ -1,0 +1,6 @@
+---
+- hosts: labs
+  become: yes
+  roles:
+    - { role: gerrive.docker }
+
